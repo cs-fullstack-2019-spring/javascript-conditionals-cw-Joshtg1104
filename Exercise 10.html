@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<h1>Exercise 10</h1>
+
+<body>
+
+<!--Ask the user for 3 cards. -->
+<!--If the sum equals 21 print BLACKJACK! If the sum is greater than 21 print BUST! -->
+<!--If the sum is less than 21 print “The total is [TOTAL]”-->
+
+<script>
+
+    var card1 = prompt("Give me a card");
+    var card2 = prompt("Another card");
+    var card3 = prompt("One last card");
+    card1 = parseInt(card1);
+    card2 = parseInt(card2);
+    card3 = parseInt(card3);
+    var sum = (card1 + card2 + card3);
+
+    if(sum === 21){
+        console.log("BLACKJACK!");
+    }
+    else if(sum > 21){
+        console.log("BUST!");
+    }
+    else if(sum < 21){
+        console.log("The total is: " + sum+"!")
+    }
+
+</script>
+
+</body>
+</html>
